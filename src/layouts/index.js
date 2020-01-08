@@ -120,7 +120,7 @@ class BasicLayout extends React.Component {
             </div>
           </div>
           <Content className={style.content}>
-            <Tabs
+            {/* <Tabs
               hideAdd
               onChange={this.onChange}
               activeKey={this.state.activeKey}
@@ -132,7 +132,8 @@ class BasicLayout extends React.Component {
                   {pane.content}
                 </TabPane>
               ))}
-            </Tabs>
+            </Tabs> */}
+            {this.props.children}
           </Content>
           {/* <Footer style={{ textAlign: 'center' }}>bef lab ©2019 Created by Xie Hu</Footer> */}
         </Layout>

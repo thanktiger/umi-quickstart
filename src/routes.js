@@ -24,13 +24,13 @@ exports.routes =  [
       {
         path: '/goodsList',
         component: 'goodsList',
-        title: '商品列表',
-        // redirect: '/'
+        title: '商品列表'
       },
-      // {
-      //   path: '/user/detail/:id',
-      //   component: 'users/detail'
-      // }
+      {
+        path: '/goodsDetail/:id',
+        component: 'goodsDetail',
+        title: '商品详情'
+      },
     ]
   }
 ];

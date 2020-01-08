@@ -25,7 +25,7 @@ const columns = [
   },
   {
     title: '商品名',
-    dataIndex: 'name',
+    dataIndex: 'name'
   },
   {
     title: '数量',
@@ -106,7 +106,6 @@ const data = [
 ];
 
 export default class OrderDetail extends React.Component {
-
 
   renderOrderInfo = () => {
     let isEdit = true

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'umi/link';
 import { Table, Input, Icon, DatePicker, Button } from 'antd';
 import style from './index.less'
 
@@ -31,6 +32,7 @@ const columns = [
   {
     title: '商品名',
     dataIndex: 'name',
+    render: (text, record, index) => <Link to={`/goodsDetail/${record.id}`}>{text}</Link>,
     width: 210
   },
   {
